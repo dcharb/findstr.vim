@@ -213,7 +213,7 @@ function! s:RunFindStr(cmd_name, cmd_opt, ...)
     endif
 
     if a:cmd_name == 'Rfindstring' || a:cmd_name == 'Rfindpattern'
-        let startdir = input('Start searching from directory: ', getcwd())
+        let startdir = input('Start searching from directory: ', getcwd(), "dir")
         if startdir == ''
             return
         endif
